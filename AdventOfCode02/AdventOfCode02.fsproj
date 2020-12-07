@@ -7,10 +7,10 @@
 
     <ItemGroup>
         <Compile Include="Program.fs" />
-        <Content Include="input01_example.txt">
+        <Content Include="input02.txt">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
-        <Content Include="input01.txt">
+        <Content Include="input02_example.txt">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
     </ItemGroup>

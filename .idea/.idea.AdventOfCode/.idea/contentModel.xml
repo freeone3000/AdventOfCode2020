@@ -7,10 +7,20 @@
       <e p="AdventOfCode" t="IncludeRecursive">
         <e p="AdventOfCode.fsproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="input01.txt" t="Include" />
+        <e p="input01_example.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Program.fs" t="Include" />
       </e>
       <e p="AdventOfCode.sln" t="IncludeFlat" />
+      <e p="AdventOfCode02" t="IncludeRecursive">
+        <e p="AdventOfCode02.fsproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="input02.txt" t="Include" />
+        <e p="input02_example.txt" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.fs" t="Include" />
+      </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
