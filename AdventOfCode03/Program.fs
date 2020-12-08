@@ -17,24 +17,32 @@ let isTree ch =
     ch = '#'
 
 let treeCount (map:TobogganMap) right down =
-    let mutable treeCount = 0
+    let mutable treeCount:int64 = 0L
     let mutable xpos = 0
     let mutable ypos = 0
     while ypos < map.Length do
         if map.Get xpos ypos |> isTree then
-            treeCount <- treeCount + 1
+            treeCount <- treeCount + 1L
         xpos <- xpos + right
         ypos <- ypos + down
     treeCount
 
 [<EntryPoint>]
 let main argv =
-    let right = argv.[0] |> Int32.Parse
-    let down = argv.[1] |> Int32.Parse
-    
-    let map = TobogganMap(readlines "map.txt")
+    let directions = [|
+        (1, 1)
+        (3, 1)
+        (5, 1)
+        (7, 1)
+        (1, 2)
+    |]
+    let product = Array.reduce (fun a b -> a * b)
+    let map = TobogganMap(readlines argv.[0])
     let f = treeCount map
     
-    let treeCount = f right down
-    printfn "%d" treeCount |> ignore
+    directions
+        |> Array.map (fun (right, down) -> f right down)
+        |> product
+        |> (printfn "%d")
+    
     0
