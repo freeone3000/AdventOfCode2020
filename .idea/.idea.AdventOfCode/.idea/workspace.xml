@@ -6,6 +6,7 @@
     <projectFile>AdventOfCode03/AdventOfCode03.fsproj</projectFile>
     <projectFile>AdventOfCode04/AdventOfCode04.csproj</projectFile>
     <projectFile>AdventOfCode06/AdventOfCode06.fsproj</projectFile>
+    <projectFile>AdventOfCode10/AdventOfCode10.fsproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -17,9 +18,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="Solution to problem 06 part 1">
+    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="Solution to problem 06 part2. Change of union to intersection.">
+      <change afterPath="$PROJECT_DIR$/AdventOfCode10/AdventOfCode10.fsproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdventOfCode10/Program.fs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdventOfCode10/input10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdventOfCode10/input10_example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode06/Program.fs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode06/Program.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +61,16 @@
         <option value="$PROJECT_DIR$/AdventOfCode06/input06_example.txt" />
         <option value="$PROJECT_DIR$/AdventOfCode06/input06.txt" />
         <option value="$PROJECT_DIR$/AdventOfCode06/Program.fs" />
+        <option value="$PROJECT_DIR$/AdventOfCode10/input10_example.txt" />
+        <option value="$PROJECT_DIR$/AdventOfCode10/Program.fs" />
+        <option value="$PROJECT_DIR$/AdventOfCode10/input10.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1lLHumhF2pjSKUIv5IR6yIrIeFR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -79,7 +90,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.AdventOfCode06">
+  <component name="RunManager" selected=".NET Project.AdventOfCode10">
     <configuration name="AdventOfCode" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/AdventOfCode/bin/Debug/net5.0/AdventOfCode.dll" />
       <option name="PROGRAM_PARAMETERS" value="input01.txt" />
@@ -188,12 +199,31 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="AdventOfCode10" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/AdventOfCode10/bin/Debug/net5.0/AdventOfCode10.dll" />
+      <option name="PROGRAM_PARAMETERS" value="input10.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode10/bin/Debug/net5.0" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/AdventOfCode10/AdventOfCode10.fsproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v5.0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue=".NET Project.AdventOfCode" />
       <item itemvalue=".NET Project.AdventOfCode02" />
       <item itemvalue=".NET Project.AdventOfCode03" />
       <item itemvalue=".NET Project.AdventOfCode04" />
       <item itemvalue=".NET Project.AdventOfCode06" />
+      <item itemvalue=".NET Project.AdventOfCode10" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -206,7 +236,7 @@
       <updated>1607369677521</updated>
       <workItem from="1607369681278" duration="13246000" />
       <workItem from="1607550786915" duration="88000" />
-      <workItem from="1607615809321" duration="8470000" />
+      <workItem from="1607615809321" duration="10021000" />
     </task>
     <task id="LOCAL-00001" summary="Solution to problem 04 part 1">
       <created>1607626272919</created>
@@ -229,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607630643372</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Solution to problem 06 part2. Change of union to intersection.">
+      <created>1607631351560</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607631351560</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,29 +291,30 @@
     <MESSAGE value="Solution to problem 04 part 1" />
     <MESSAGE value="Solution to problem 04 part 2" />
     <MESSAGE value="Solution to problem 06 part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution to problem 06 part 1" />
+    <MESSAGE value="Solution to problem 06 part2. Change of union to intersection." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution to problem 06 part2. Change of union to intersection." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607631334720">
+    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607633133151">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607631334720" />
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1607631318122">
+    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607633133151" />
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1607633109602">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607631318122" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1607631318122">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607633109602" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1607633109602">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607631318122" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1607631318122">
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607633109602" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1607633109602">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607631318122" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1607631318122">
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607633109602" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1607633109602">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607631318122" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607633109602" />
     <state width="2517" height="519" key="GridCell.Tab.1.bottom" timestamp="1607630999852">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -341,10 +379,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="519" key="GridCell.Tab.4.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607630999852" />
-    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size" timestamp="1607629225918">
+    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size" timestamp="1607632434966">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607629225918" />
+    <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607632434966" />
     <state x="781" y="345" key="SettingsEditor" timestamp="1607369697876">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
