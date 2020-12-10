@@ -33,7 +33,9 @@
         <e p="AdventOfCode04.fsproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="input04.txt" t="Include" />
+        <e p="input04_02.txt" t="Include" />
         <e p="input04_example.txt" t="Include" />
+        <e p="input04_invalid.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Program.fs" t="Include" />
       </e>

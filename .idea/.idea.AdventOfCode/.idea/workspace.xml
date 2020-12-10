@@ -16,14 +16,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AdventOfCode04/AdventOfCode04.fsproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdventOfCode04/Program.fs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdventOfCode04/input04.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdventOfCode04/input04_example.txt" afterDir="false" />
+    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="Solution to problem 04 part 1">
+      <change afterPath="$PROJECT_DIR$/AdventOfCode04/input04_02.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdventOfCode04/input04_invalid.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode04/AdventOfCode04.fsproj" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode04/AdventOfCode04.fsproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode04/Program.fs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode04/Program.fs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +52,10 @@
         <option value="$PROJECT_DIR$/AdventOfCode03/Program.fs" />
         <option value="$PROJECT_DIR$/AdventOfCode04/Program.cs" />
         <option value="$PROJECT_DIR$/AdventOfCode04/input04_example.txt" />
-        <option value="$PROJECT_DIR$/AdventOfCode04/Program.fs" />
         <option value="$PROJECT_DIR$/AdventOfCode04/input04.txt" />
+        <option value="$PROJECT_DIR$/AdventOfCode04/Program.fs" />
+        <option value="$PROJECT_DIR$/AdventOfCode04/input04_invalid.txt" />
+        <option value="$PROJECT_DIR$/AdventOfCode04/input04_02.txt" />
       </list>
     </option>
   </component>
@@ -153,7 +155,7 @@
     </configuration>
     <configuration name="AdventOfCode04" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/AdventOfCode04/bin/Debug/net5.0/AdventOfCode04.dll" />
-      <option name="PROGRAM_PARAMETERS" value="input04.txt" />
+      <option name="PROGRAM_PARAMETERS" value="input04_02.txt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode04/bin/Debug/net5.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -186,8 +188,16 @@
       <updated>1607369677521</updated>
       <workItem from="1607369681278" duration="13246000" />
       <workItem from="1607550786915" duration="88000" />
-      <workItem from="1607615809321" duration="3433000" />
+      <workItem from="1607615809321" duration="6139000" />
     </task>
+    <task id="LOCAL-00001" summary="Solution to problem 04 part 1">
+      <created>1607626272919</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607626272919</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,28 +219,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Solution to problem 04 part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solution to problem 04 part 1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607626223254">
+    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607628986956">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607626223254" />
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1607626187113">
+    <state x="734" y="355" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607628986956" />
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1607628956999">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607626187113" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1607626187113">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607628956999" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1607628956999">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607626187113" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1607626187113">
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607628956999" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1607628956999">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607626187113" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1607626187113">
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607628956999" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1607628956999">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607626187113" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1607628956999" />
     <state width="2517" height="519" key="GridCell.Tab.1.bottom" timestamp="1607625603255">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

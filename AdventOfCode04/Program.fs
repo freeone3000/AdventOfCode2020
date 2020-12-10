@@ -28,12 +28,46 @@ let processPassports (lines:seq<string>) : list<PassportData> =
     passports <- curPassport :: passports
     passports
     
-let isValid passport =
-    let isSafe (passport:PassportData) field =
-        passport.GetValueOrDefault(field, "") <> ""
+let isValid (passport:PassportData) =
+    let safeint (str:string):int =
+        match Int32.TryParse(str) with
+        | true, x -> x
+        | _ -> -1
+
+    let isHex (str:string) =
+        seq { for c in str.Substring(1) -> c }
+        |> Seq.forall (fun ch -> (ch >= 'a' && ch <= 'f') || (ch >= '0' && ch <= '9'))
     
-    let fields = seq { "byr"; "iyr"; "eyr"; "hgt"; "hcl"; "ecl"; "pid" } // no cid
-    Seq.forall (isSafe passport) fields
+    let validEyeColor str =
+        let validColors = [ "amb"; "blu"; "brn"; "gry"; "grn"; "hzl"; "oth" ]
+        validColors |> List.exists ((=) str)
+    
+    let validHeight (str:string) =
+        if str.EndsWith("cm") && str.Length >= 5 then
+            let hgt = safeint (str.Substring(0, 3))
+            hgt >= 150 && hgt <= 193
+        else if str.EndsWith("in") && str.Length >= 4 then
+            let hgt = safeint (str.Substring(0, 2))
+            hgt >= 59 && hgt <= 76
+        else
+            false
+    
+    let validators = seq {
+        "byr", safeint >> (fun x -> x >= 1920 && x <= 2002)
+        "iyr", safeint >> (fun x -> x >= 2010 && x <= 2020)
+        "eyr", safeint >> (fun x -> x >= 2020 && x <= 2030)
+        "hgt", validHeight
+        "hcl", (fun (x:string) -> x.Length = 7 && x.[0] = '#' && isHex x)
+        "ecl", validEyeColor
+        "pid", (fun (x:string) -> x.Length = 9 && (safeint x) >= 0)
+    }
+
+    validators
+    |> Seq.forall (fun (field, validator) ->
+        match passport.TryGetValue(field) with // if the field is present, validate, else, false
+        | true, value -> (validator value)
+        | _ -> false
+    )
     
 [<EntryPoint>]
 let main argv =

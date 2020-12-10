@@ -10,7 +10,13 @@
         <Content Include="input04.txt">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
+        <Content Include="input04_02.txt">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
         <Content Include="input04_example.txt">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="input04_invalid.txt">
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
