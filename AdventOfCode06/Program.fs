@@ -5,21 +5,25 @@ let readlines (fn:string) : seq<string> =
     
 let parseGroups (lines:seq<string>) =
     let mutable groups = []
-    let mutable curGroup = Set<char>(Seq.empty)
+    let mutable curGroup = None
     
     for line in lines do
         if line.Length = 0 then
             groups <- curGroup :: groups
-            curGroup <- Set<char>(Seq.empty)
+            curGroup <- None
         else
-            for ch in line do
-                curGroup <- curGroup.Add(ch)
+            let person = Set<char>(seq { for ch in line -> ch})
+//            curGroup <- Set.union curGroup person
+            curGroup <- match curGroup with
+                        | None -> Some person
+                        | Some group -> Some (Set.intersect group person)
     (curGroup :: groups)
     
 [<EntryPoint>]
 let main argv =
-    let count = parseGroups (readlines argv.[0])
-                |> List.map (fun group -> group.Count)
-                |> List.sum
-    printfn "Count:\n%d" count
+    let counts = parseGroups (readlines argv.[0])
+                |> List.map (fun group -> match group with
+                                           | None -> 0
+                                           | Some s -> s.Count)
+    printfn "Count:\n%d" (List.sum counts)
     0
