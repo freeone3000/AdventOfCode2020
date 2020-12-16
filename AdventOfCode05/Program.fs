@@ -28,8 +28,20 @@ let defToId (def:string) =
 let main argv =
     printfn "Sanity: 357 = %d" (defToId "FBFBBFFRLR")
     
-    readlines argv.[0]
-        |> Seq.map defToId
-        |> Seq.max
-        |> printfn "%d"
+    let discontToId (x:int[]) =
+        if x.[0] + 1 <> x.[1] then
+            x.[0] + 1
+        else if x.[1] + 1 <> x.[2] then
+            x.[1] + 1
+        else
+            -1
+    // alternate solution: you know, I bet we could just count to 800 and check every one.
+    let result = readlines argv.[0]
+                |> Seq.map defToId
+                |> Seq.sort
+                |> Seq.windowed 3 // big o? the giant robot?
+                |> Seq.filter (fun x -> x.[0] + 1 <> x.[1] || x.[1] + 1 <> x.[2]) // find discontinuity
+                |> Seq.map discontToId
+                |> Seq.head
+    printfn "%d" result
     0

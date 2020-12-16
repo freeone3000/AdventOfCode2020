@@ -19,14 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="Solution to problem 10 part 1.">
-      <change afterPath="$PROJECT_DIR$/AdventOfCode05/AdventOfCode05.fsproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdventOfCode05/Program.fs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdventOfCode05/input05.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="AdventOfCode 05 part 01">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode05/Program.fs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode05/Program.fs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +233,7 @@
       <workItem from="1607550786915" duration="88000" />
       <workItem from="1607615809321" duration="10725000" />
       <workItem from="1608137615999" duration="827000" />
-      <workItem from="1608140309159" duration="1844000" />
+      <workItem from="1608140309159" duration="2822000" />
     </task>
     <task id="LOCAL-00001" summary="Solution to problem 04 part 1">
       <created>1607626272919</created>
@@ -275,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607633186361</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="AdventOfCode 05 part 01">
+      <created>1608142183218</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608142183218</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +304,8 @@
     <MESSAGE value="Solution to problem 06 part 1" />
     <MESSAGE value="Solution to problem 06 part2. Change of union to intersection." />
     <MESSAGE value="Solution to problem 10 part 1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solution to problem 10 part 1." />
+    <MESSAGE value="AdventOfCode 05 part 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="AdventOfCode 05 part 01" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
