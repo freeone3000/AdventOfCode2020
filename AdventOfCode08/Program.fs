@@ -21,9 +21,13 @@ let evalStep insn state =
     | { name = "jmp" } -> { acc = state.acc ; pc = state.pc + insn.arg }
     | _ -> failwith "Unhandled Insn"
 
-let rec eval (program:Insn[]) (seen:Set<int>) state =
-    if seen.Contains(state.pc) then
-        state
+let rec eval (program:Insn[]) (seen:Set<int>) state = // (terminated, state)
+    if state.pc > program.Length then
+        (false, state) // out of bounds
+    else if state.pc = program.Length then
+        (true, state) // actual only successful completion
+    else if seen.Contains(state.pc) then
+        (false, state) // infinite loop
     else
         let nextInsn = program.[state.pc]
         let nextState = evalStep nextInsn state
@@ -35,6 +39,10 @@ let main argv =
                    |> Seq.map parseInsn
                    |> Seq.toArray
     let initState = { acc = 0 ; pc = 0 }
-    let finalState = eval program Set.empty initState 
-    printfn "Answer: %d" finalState.acc
+    let evalResult  = eval program Set.empty initState
+    // TODO It's possible to change one Insn from nop to jmp, or jmp to nop, and have it complete.
+    // Obvious solution is to try them all.
+    // What's a less-obvious solution?
+    match evalResult with
+    | (_, finalState) -> printfn "Answer: %d" finalState.acc
     0
