@@ -9,6 +9,8 @@
     <projectFile>AdventOfCode10/AdventOfCode10.fsproj</projectFile>
     <projectFile>AdventOfCode05/AdventOfCode05.fsproj</projectFile>
     <projectFile>AdventOfCode08/AdventOfCode08.fsproj</projectFile>
+    <projectFile>AdventOfCode07/AdventOfCode07.fsproj</projectFile>
+    <projectFile>AdventOfCode11/AdventOfCode11.fsproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -20,9 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="AdventOfCode 08 part 01.">
+    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="AdventOfCode08 now determines whether program completed successfully,">
+      <change afterPath="$PROJECT_DIR$/AdventOfCode11/AdventOfCode11.fsproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdventOfCode11/Program.fs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdventOfCode11/input11_example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode08/Program.fs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode08/Program.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +39,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDCCF319-ADEC-8BDF-2295-52FABDB408CF/3/seq.fs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6AB201F8-C426-4EB8-B374-9FB7E3FFC0F4/21/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6AB201F8-C426-4EB8-B374-9FB7E3FFC0F4/6/CaptureCollection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/05549A4D-0BD9-4208-86A3-46696D25F3B3/23/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -45,6 +69,9 @@
       <option value="$PROJECT_DIR$/AdventOfCode08/input08_example.txt" />
       <option value="$PROJECT_DIR$/AdventOfCode08/input08.txt" />
       <option value="$PROJECT_DIR$/AdventOfCode08/Program.fs" />
+      <option value="$PROJECT_DIR$/AdventOfCode07/Program.fs" />
+      <option value="$PROJECT_DIR$/AdventOfCode11/input11_example.txt" />
+      <option value="$PROJECT_DIR$/AdventOfCode11/Program.fs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lLHumhF2pjSKUIv5IR6yIrIeFR" />
@@ -70,7 +97,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.AdventOfCode08">
+  <component name="RunManager" selected=".NET Project.AdventOfCode11">
     <configuration name="AdventOfCode" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/AdventOfCode/bin/Debug/net5.0/AdventOfCode.dll" />
       <option name="PROGRAM_PARAMETERS" value="input01.txt" />
@@ -197,6 +224,24 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="AdventOfCode07" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/AdventOfCode07/AdventOfCode07.fsproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="AdventOfCode08" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/AdventOfCode08/bin/Debug/net5.0/AdventOfCode08.dll" />
       <option name="PROGRAM_PARAMETERS" value="input08.txt" />
@@ -233,6 +278,24 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="AdventOfCode11" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/AdventOfCode11/bin/Debug/net5.0/AdventOfCode11.dll" />
+      <option name="PROGRAM_PARAMETERS" value="input11_example.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode11/bin/Debug/net5.0" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/AdventOfCode11/AdventOfCode11.fsproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="net5.0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue=".NET Project.AdventOfCode" />
       <item itemvalue=".NET Project.AdventOfCode02" />
@@ -242,6 +305,8 @@
       <item itemvalue=".NET Project.AdventOfCode06" />
       <item itemvalue=".NET Project.AdventOfCode10" />
       <item itemvalue=".NET Project.AdventOfCode08" />
+      <item itemvalue=".NET Project.AdventOfCode07" />
+      <item itemvalue=".NET Project.AdventOfCode11" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -258,7 +323,7 @@
       <workItem from="1608137615999" duration="827000" />
       <workItem from="1608140309159" duration="4353000" />
       <workItem from="1608165201564" duration="1208000" />
-      <workItem from="1608229585480" duration="2143000" />
+      <workItem from="1608229585480" duration="7359000" />
     </task>
     <task id="LOCAL-00001" summary="Solution to problem 04 part 1">
       <created>1607626272919</created>
@@ -316,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608230807010</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="AdventOfCode08 now determines whether program completed successfully,">
+      <created>1608231952031</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608231952031</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +418,8 @@
     <MESSAGE value="AdventOfCode 05 part 01" />
     <MESSAGE value="AdventOfCode 05 part 02. First try." />
     <MESSAGE value="AdventOfCode 08 part 01." />
-    <option name="LAST_COMMIT_MESSAGE" value="AdventOfCode 08 part 01." />
+    <MESSAGE value="AdventOfCode08 now determines whether program completed successfully," />
+    <option name="LAST_COMMIT_MESSAGE" value="AdventOfCode08 now determines whether program completed successfully," />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -365,7 +438,32 @@
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <condition expression="y == 2 &amp;&amp; x == 8" language="F#" />
+          <url>file://$PROJECT_DIR$/AdventOfCode11/Program.fs</url>
+          <line>39</line>
+          <properties documentPath="C:\Users\James\RiderProjects\AdventOfCode\AdventOfCode11\Program.fs" initialLine="39" isMultiMethodBreakpoint="true">
+            <option name="multiMethodBreakpoint" value="true" />
+            <startOffsets>
+              <option value="945" />
+            </startOffsets>
+            <endOffsets>
+              <option value="980" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Frame#Program.eval" memberName="curState" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="DotNetProject">
+        <watch expression="grid.[y].[x]" language="F#" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
