@@ -23,9 +23,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="Fixed off-by-one error">
+    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="AdventOfCode 09 part 2">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode09/Program.fs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode09/Program.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode08/AdventOfCode08.fsproj" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode08/AdventOfCode08.fsproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode08/Program.fs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode08/Program.fs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,6 @@
       <option value="$PROJECT_DIR$/AdventOfCode05/Program.fs" />
       <option value="$PROJECT_DIR$/AdventOfCode08/input08_example.txt" />
       <option value="$PROJECT_DIR$/AdventOfCode08/input08.txt" />
-      <option value="$PROJECT_DIR$/AdventOfCode08/Program.fs" />
       <option value="$PROJECT_DIR$/AdventOfCode11/input11_example.txt" />
       <option value="$PROJECT_DIR$/AdventOfCode11/Program.fs" />
       <option value="$PROJECT_DIR$/AdventOfCode07/input07.txt" />
@@ -65,6 +65,7 @@
       <option value="$PROJECT_DIR$/AdventOfCode09/input09_example.txt" />
       <option value="$PROJECT_DIR$/AdventOfCode09/input09.txt" />
       <option value="$PROJECT_DIR$/AdventOfCode09/Program.fs" />
+      <option value="$PROJECT_DIR$/AdventOfCode08/Program.fs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lLHumhF2pjSKUIv5IR6yIrIeFR" />
@@ -91,7 +92,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.AdventOfCode09_Run">
+  <component name="RunManager" selected=".NET Project.AdventOfCode08">
     <configuration name="AdventOfCode" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/AdventOfCode/bin/Debug/net5.0/AdventOfCode.dll" />
       <option name="PROGRAM_PARAMETERS" value="input01.txt" />
@@ -238,7 +239,7 @@
     </configuration>
     <configuration name="AdventOfCode08" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/AdventOfCode08/bin/Debug/net5.0/AdventOfCode08.dll" />
-      <option name="PROGRAM_PARAMETERS" value="input08.txt" />
+      <option name="PROGRAM_PARAMETERS" value="input08_example.txt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode08/bin/Debug/net5.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -334,9 +335,9 @@
       <item itemvalue=".NET Project.AdventOfCode05" />
       <item itemvalue=".NET Project.AdventOfCode06" />
       <item itemvalue=".NET Project.AdventOfCode07" />
+      <item itemvalue=".NET Project.AdventOfCode08" />
       <item itemvalue=".NET Project.AdventOfCode09_Test" />
       <item itemvalue=".NET Project.AdventOfCode09_Run" />
-      <item itemvalue=".NET Project.AdventOfCode08" />
       <item itemvalue=".NET Project.AdventOfCode10" />
       <item itemvalue=".NET Project.AdventOfCode11" />
     </list>
@@ -356,7 +357,7 @@
       <workItem from="1608140309159" duration="4353000" />
       <workItem from="1608165201564" duration="1208000" />
       <workItem from="1608229585480" duration="7571000" />
-      <workItem from="1608526502529" duration="11961000" />
+      <workItem from="1608526502529" duration="13556000" />
     </task>
     <task id="LOCAL-00001" summary="Solution to problem 04 part 1">
       <created>1607626272919</created>
@@ -463,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608537213023</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="AdventOfCode 09 part 2">
+      <created>1608539326708</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608539326708</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +508,8 @@
     <MESSAGE value="AdventOfCode 07 part 2" />
     <MESSAGE value="AdventOfCode 09 part 1" />
     <MESSAGE value="Fixed off-by-one error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed off-by-one error" />
+    <MESSAGE value="AdventOfCode 09 part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="AdventOfCode 09 part 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

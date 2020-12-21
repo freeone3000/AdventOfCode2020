@@ -39,10 +39,26 @@ let main argv =
                    |> Seq.map parseInsn
                    |> Seq.toArray
     let initState = { acc = 0 ; pc = 0 }
+    // part 1
     let evalResult  = eval program Set.empty initState
-    // TODO It's possible to change one Insn from nop to jmp, or jmp to nop, and have it complete.
-    // Obvious solution is to try them all.
-    // What's a less-obvious solution?
-    match evalResult with
-    | (_, finalState) -> printfn "Answer: %d" finalState.acc
+    printfn "Answer: %d" (snd evalResult).acc
+    
+    // part 2, where we brute-force
+    let workingProgram =
+        seq {
+            let mutable idx = 0
+            while idx < Array.length program do
+                let tmpCopy = Array.copy program
+                if program.[idx].name = "nop" then
+                    Array.set tmpCopy idx { name = "jmp"; arg = program.[idx].arg }
+                    yield Some tmpCopy
+                else if program.[idx].name = "jmp" then
+                    Array.set tmpCopy idx { name = "nop"; arg = program.[idx].arg }
+                    yield Some tmpCopy
+                idx <- idx + 1
+        }
+        |> Seq.choose id
+        |> Seq.map (fun prog -> eval prog Set.empty initState)
+        |> Seq.find fst
+    printfn "Accum after success: %d" (snd workingProgram).acc 
     0
