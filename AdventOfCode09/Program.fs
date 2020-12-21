@@ -30,9 +30,9 @@ let main argv =
     let window = match Int32.TryParse(argv.[0]) with
                  | (true, x) -> x
                  | (false, _) -> failwith "First argument must be an integer"
-    let lines = readlines argv.[1]
-                |> Seq.map Int64.Parse
-                |> Seq.toArray
+    let lineSeq = readlines argv.[1]
+                  |> Seq.map Int64.Parse
+    let lines = Seq.toArray lineSeq
     
     let calc idx = // sum last 'window' elements as a set.
         if idx < window then
@@ -46,10 +46,28 @@ let main argv =
     printfn "\n--"
     Seq.iter (printf "%d,") (calc x)
     printfn "\n--"
-        
-    lines
-    |> Array.mapi (fun idx elem -> elem, Set.contains elem (calc idx))  // determine if item exists in the set so far
-    |> Array.skip window // skip preamble, which is conveniently also window-sized
-    |> Array.filter (fun (_, x) -> not x)
-    |> Array.iter ((printfn "%d") << fst)
+    
+    // part 1    
+    let target = lineSeq
+                 |> Seq.mapi (fun idx elem -> elem, Set.contains elem (calc idx))  // determine if item exists in the set so far
+                 |> Seq.skip window // skip preamble, which is conveniently also window-sized
+                 |> Seq.filter (fun (_, x) -> not x)
+                 |> Seq.map fst
+                 |> Seq.head
+    printfn "No match: %d" target
+    
+    // part 2
+    let sumFrom idx =
+        seq {
+            for i = idx to Array.length lines do
+                let range = lines.[idx..i]
+                yield (Array.min range + Array.max range), Array.sum range 
+        }
+        |> Seq.takeWhile ((fun x -> x <= target) << snd)
+        |> Seq.tryLast
+   
+    let answer = Seq.unfold (fun idx -> if idx >= Array.length lines then None else Some (sumFrom idx, idx+1)) 0
+                 |> Seq.choose id
+                 |> Seq.find (fun (_, sum) -> sum = target)
+    printfn "Answer: %d" (fst answer)
     0
