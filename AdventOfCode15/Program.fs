@@ -1,23 +1,34 @@
 ﻿open System
 
-let rec calculate goal entries =
-    let length = List.length entries
-    let target = List.last entries
+let rec calculate idx last goal entries =
+//    Map.iter (printf "%d: %d; ") entries
+//    printfn ""
+    if idx % 100000 = 0 then
+        printfn "Iter: %d" idx
     
-    if length >= goal then
-        target
+    if idx >= goal then
+        last
     else
-        match List.tryFindIndexBack (fun x -> x = target) (List.truncate (length-1) entries) with
-        | None -> calculate goal (entries@[0])
-        | Some a -> calculate goal (entries@[length - a - 1])
+        let next = match Map.tryFind last entries with
+                   | None -> 0
+                   | Some a -> idx - a - 1
+        calculate (idx+1) next goal (Map.add last (idx-1) entries)
+
 
 [<EntryPoint>]
 let main argv =
     printf "Enter the known numbers: "
-    let numbers = Console.ReadLine().Split(",")
-                  |> List.ofArray
-                  |> List.map Int32.Parse
-    if List.length numbers < 3 then
+    let input = Console.ReadLine().Split(",")
+                |> Array.map Int32.Parse
+    if Array.length input < 3 then
         failwith "Syntax for input is 1,3,5"
-    printfn "Answer: %d" (calculate 2020 numbers)
+        
+    let entries = input
+                  |> Array.mapi (fun x y -> (y, x))
+                  |> Map.ofArray
+    
+//    let targetLength = 2020
+    let targetLength = 30000000
+    let answer = calculate (Map.count entries) (Array.last input) targetLength entries 
+    printfn "Answer: %d" answer
     0
