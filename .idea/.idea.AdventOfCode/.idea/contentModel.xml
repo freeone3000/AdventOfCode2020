@@ -71,6 +71,14 @@
         <e p="obj" t="ExcludeRecursive" />
         <e p="Program.fs" t="Include" />
       </e>
+      <e p="AdventOfCode09" t="IncludeRecursive">
+        <e p="AdventOfCode09.fsproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="input09.txt" t="Include" />
+        <e p="input09_example.txt" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.fs" t="Include" />
+      </e>
       <e p="AdventOfCode10" t="IncludeRecursive">
         <e p="AdventOfCode10.fsproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
