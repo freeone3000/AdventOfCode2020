@@ -59,7 +59,13 @@ let bagSearch needle bags =
     bags
     |> Map.filter (fun _ v -> v.color <> needle) // trim top-level self
     |> Map.map (fun _ -> search Set.empty needle) // bag -> number of paths
-    
+
+let rec bagFill needle bags =
+    let bag = Map.find needle bags
+    let children = bag.contents
+                   |> Array.map (fun contents -> contents.number * (bagFill contents.color bags))
+                   |> Array.sum
+    1 + children // include self
 
 [<EntryPoint>]
 let main argv =
@@ -74,7 +80,7 @@ let main argv =
     |> Map.count
     |> printfn "Contents for a shiny gold bag: %d"
     
-    // part 02
-    
+    // part 02 - why are these *min* instead of *max*? this stretches credulity
+    printfn "Total number of bags in a shiny gold bag: %d" ((bagFill "shiny gold" bags) - 1) // subtract top level
     
     0

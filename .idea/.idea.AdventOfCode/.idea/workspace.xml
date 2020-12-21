@@ -22,11 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="AdventOfCode 07 part 1.">
-      <change afterPath="$PROJECT_DIR$/AdventOfCode07/input07_example2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="refinement of part 07">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode07/AdventOfCode07.fsproj" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode07/AdventOfCode07.fsproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdventOfCode07/Program.fs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode07/Program.fs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -308,7 +305,7 @@
       <workItem from="1608140309159" duration="4353000" />
       <workItem from="1608165201564" duration="1208000" />
       <workItem from="1608229585480" duration="7571000" />
-      <workItem from="1608526502529" duration="4916000" />
+      <workItem from="1608526502529" duration="5313000" />
     </task>
     <task id="LOCAL-00001" summary="Solution to problem 04 part 1">
       <created>1607626272919</created>
@@ -387,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608531202894</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="refinement of part 07">
+      <created>1608531480466</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608531480466</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +424,8 @@
     <MESSAGE value="AdventOfCode08 now determines whether program completed successfully," />
     <MESSAGE value="Code 11 needs debugging." />
     <MESSAGE value="AdventOfCode 07 part 1." />
-    <option name="LAST_COMMIT_MESSAGE" value="AdventOfCode 07 part 1." />
+    <MESSAGE value="refinement of part 07" />
+    <option name="LAST_COMMIT_MESSAGE" value="refinement of part 07" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
