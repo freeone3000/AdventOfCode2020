@@ -67,11 +67,14 @@ let main argv =
                |> Seq.map parse
                |> Seq.map (fun bag -> bag.color, bag)
                |> Map.ofSeq
+    
+    // part 01
     bagSearch "shiny gold" bags
-    |> Map.toSeq
-    |> Seq.map (fun (_, count) -> if count > 0 then 1 else 0)
-    |> Seq.sum
-    |> printfn "Bags: %d"
+    |> Map.filter (fun _ count -> count > 0)
+    |> Map.count
+    |> printfn "Contents for a shiny gold bag: %d"
+    
+    // part 02
     
     
-    0 // return an integer exit code
+    0
