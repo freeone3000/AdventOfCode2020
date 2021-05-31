@@ -100,6 +100,14 @@
         <e p="obj" t="ExcludeRecursive" />
         <e p="Program.fs" t="Include" />
       </e>
+      <e p="AdventOfCode19" t="IncludeRecursive">
+        <e p="AdventOfCode19.fsproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="input_01.txt" t="Include" />
+        <e p="input_test.txt" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.fs" t="Include" />
+      </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
