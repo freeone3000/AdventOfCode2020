@@ -52,7 +52,9 @@ let parseRefList ruleString =
 let rec parseInnerRule(ruleString) =
     // we use active patterns here for ease of reading
     match ruleString with
-    | Literal x -> (fun (ch:string) -> ch.Substring(0, x.Length).Equals(x), x.Length)
+    | Literal x -> (fun (ch:string) ->
+        if x.Length > ch.Length then false, 0
+        else ch.Substring(0, x.Length).Equals(x), x.Length)
     | OrPatterns patterns -> patterns
                              |> Seq.map parseInnerRule
                              |> Seq.reduce RuleOr
@@ -73,6 +75,8 @@ let readlines (fn:string) : seq<string> =
 
 [<EntryPoint>]
 let main argv =
+    let MONKEY_PATCH = false // problem 02
+    
     let fn = argv.[0]
     let lines = readlines fn
     
@@ -80,6 +84,10 @@ let main argv =
     lines
     |> Seq.filter IsRule
     |> Seq.iter parseRule
+    
+    if MONKEY_PATCH then
+        ALL_RULES.[8] <- parseInnerRule("42 | 42 8")
+        ALL_RULES.[11] <- parseInnerRule("42 31 | 42 11 31")
     
     // parse input
     let toMatch = lines
