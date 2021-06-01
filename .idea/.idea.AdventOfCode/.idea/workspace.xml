@@ -15,6 +15,7 @@
     <projectFile>AdventOfCode15/AdventOfCode15.fsproj</projectFile>
     <projectFile>AdventOfCode19/AdventOfCode19.fsproj</projectFile>
     <projectFile>AdventOfCode14/AdventOfCode14.fsproj</projectFile>
+    <projectFile>AdventOfCode13/AdventOfCode13.fsproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -26,12 +27,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="Updated input with potential monkey-patch. Doesn't seem to work.">
-      <change afterPath="$PROJECT_DIR$/AdventOfCode14/input_01.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdventOfCode14/input_test.txt" afterDir="false" />
+    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="AdventOfCode14: Passes test cases and input_01.">
+      <change afterPath="$PROJECT_DIR$/AdventOfCode13/AdventOfCode13.fsproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdventOfCode13/Program.fs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdventOfCode13/input_01.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdventOfCode13/input_test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdventOfCode.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode14/Program.fs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode14/Program.fs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +82,10 @@
       <option value="$PROJECT_DIR$/AdventOfCode19/Program.fs" />
       <option value="$PROJECT_DIR$/AdventOfCode14/input_test.txt" />
       <option value="$PROJECT_DIR$/AdventOfCode14/input_01.txt" />
+      <option value="$PROJECT_DIR$/AdventOfCode13/input_test.txt" />
       <option value="$PROJECT_DIR$/AdventOfCode14/Program.fs" />
+      <option value="$PROJECT_DIR$/AdventOfCode13/Program.fs" />
+      <option value="$PROJECT_DIR$/AdventOfCode13/input_01.txt" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lLHumhF2pjSKUIv5IR6yIrIeFR" />
@@ -105,7 +112,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.AdventOfCode14_Run">
+  <component name="RunManager" selected=".NET Project.AdventOfCode13_Run">
     <configuration name="AdventOfCode" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/AdventOfCode/bin/Debug/net5.0/AdventOfCode.dll" />
       <option name="PROGRAM_PARAMETERS" value="input01.txt" />
@@ -340,20 +347,38 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="AdventOfCode14" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+    <configuration name="AdventOfCode13_Run" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/AdventOfCode13/bin/Debug/net5.0/AdventOfCode13.dll" />
+      <option name="PROGRAM_PARAMETERS" value="input_01.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode13/bin/Debug/net5.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/AdventOfCode14/AdventOfCode14.fsproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/AdventOfCode13/AdventOfCode13.fsproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value="net5.0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="AdventOfCode13_Test" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/AdventOfCode13/bin/Debug/net5.0/AdventOfCode13.dll" />
+      <option name="PROGRAM_PARAMETERS" value="input_test.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AdventOfCode13/bin/Debug/net5.0" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/AdventOfCode13/AdventOfCode13.fsproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="net5.0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -443,11 +468,12 @@
       <item itemvalue=".NET Project.AdventOfCode09_Run" />
       <item itemvalue=".NET Project.AdventOfCode10" />
       <item itemvalue=".NET Project.AdventOfCode11" />
-      <item itemvalue=".NET Project.AdventOfCode15" />
+      <item itemvalue=".NET Project.AdventOfCode13_Test" />
+      <item itemvalue=".NET Project.AdventOfCode13_Run" />
       <item itemvalue=".NET Project.AdventOfCode14_Test" />
       <item itemvalue=".NET Project.AdventOfCode14_Run" />
+      <item itemvalue=".NET Project.AdventOfCode15" />
       <item itemvalue=".NET Project.AdventOfCode19_Run" />
-      <item itemvalue=".NET Project.AdventOfCode14" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -466,7 +492,7 @@
       <workItem from="1608165201564" duration="1208000" />
       <workItem from="1608229585480" duration="7571000" />
       <workItem from="1608526502529" duration="23275000" />
-      <workItem from="1622488333027" duration="10358000" />
+      <workItem from="1622488333027" duration="11968000" />
     </task>
     <task id="LOCAL-00001" summary="Solution to problem 04 part 1">
       <created>1607626272919</created>
@@ -615,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622503297883</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="AdventOfCode14: Passes test cases.">
+      <created>1622506164228</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1622506164228</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,7 +691,8 @@
     <MESSAGE value="AdventOfCode 15 part 2. Needed to scale up." />
     <MESSAGE value="AdventOfCode19 part 1. Regular language parsers are fun!" />
     <MESSAGE value="Updated input with potential monkey-patch. Doesn't seem to work." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated input with potential monkey-patch. Doesn't seem to work." />
+    <MESSAGE value="AdventOfCode14: Passes test cases and input_01." />
+    <option name="LAST_COMMIT_MESSAGE" value="AdventOfCode14: Passes test cases and input_01." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -677,6 +711,20 @@
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AdventOfCode13/Program.fs</url>
+          <line>8</line>
+          <properties documentPath="C:\Users\James\RiderProjects\AdventOfCode\AdventOfCode13\Program.fs" initialLine="8" isMultiMethodBreakpoint="true">
+            <option name="multiMethodBreakpoint" value="true" />
+            <startOffsets>
+              <option value="205" />
+            </startOffsets>
+            <endOffsets>
+              <option value="213" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -684,10 +732,5 @@
         <PinnedItemInfo parentTag="Frame#Program.eval" memberName="curState" />
       </pinned-members>
     </pin-to-top-manager>
-    <watches-manager>
-      <configuration name="DotNetProject">
-        <watch expression="MEMORY" language="F#" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

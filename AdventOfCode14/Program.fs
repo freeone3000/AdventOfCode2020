@@ -1,6 +1,4 @@
-﻿// Learn more about F# at http://docs.microsoft.com/dotnet/fsharp
-
-open System
+﻿open System
 open System.Collections.Generic
 open System.Text.RegularExpressions
 
@@ -22,13 +20,13 @@ let weirdBinaryToNumber (rawOutput:string) =
     // inverse of decimalTo36BitBinary
     Convert.ToInt64(rawOutput, 2)
     
-let (|Mask|_|) input =
+let (|Mask|_|) input = // mask = val
     let parts = Regex.Split(input, "\s+=\s+")
     if parts.[0] = "mask" then
         Some parts.[1]
     else None
     
-let (|Memory|_|) input =
+let (|Memory|_|) input = // mem[addr] = val
     let regexMatch = Regex.Match(input, "mem\\[(\\d+)\\]\\s*=\\s*(\\d+)")
     if regexMatch.Success then
         let group (x:int) = regexMatch.Groups.[x].Captures.[0].Value // get around clunky syntax
@@ -43,7 +41,7 @@ let readlines (fn:string) : seq<string> =
 
 [<EntryPoint>]
 let main argv =
-    let mutable mask = "".PadLeft(36, 'X')
+    let mutable mask = "".PadLeft(36, 'X') // default to XXX...XX
     
     let handleLine (line:string) =
         match line.Trim() with
