@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\Users\James\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\James\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_AdventOfCode.-1775169155.00" t="ExcludeRecursive" />
+    <e p="C:\Users\James\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\James\RiderProjects\AdventOfCode" t="IncludeFlat">
       <e p="AdventOfCode" t="IncludeRecursive">
         <e p="AdventOfCode.fsproj" t="IncludeRecursive" />
@@ -113,6 +114,13 @@
       <e p="AdventOfCode15" t="IncludeRecursive">
         <e p="AdventOfCode15.fsproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.fs" t="Include" />
+      </e>
+      <e p="AdventOfCode17" t="IncludeRecursive">
+        <e p="AdventOfCode17.fsproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="input17_sample.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Program.fs" t="Include" />
       </e>
