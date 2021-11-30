@@ -10,6 +10,9 @@
         <Content Include="input17_sample.txt">
           <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
+        <Content Include="input17.txt">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 
 </Project>
