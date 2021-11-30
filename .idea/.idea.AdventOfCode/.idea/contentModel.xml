@@ -85,6 +85,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="input10.txt" t="Include" />
         <e p="input10_example.txt" t="Include" />
+        <e p="input10_example2.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Program.fs" t="Include" />
       </e>
