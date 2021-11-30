@@ -26,4 +26,7 @@ let calculateEncryptionKey subject keyPub doorPub  =
 let main argv =    
     // test case
     assert((calculateEncryptionKey 7uL 5764801uL 17807724uL) = 14897079uL)
+    
+    let result = calculateEncryptionKey 7uL 10705932uL 12301431uL // 7 is a guess
+    printfn "Calculated: %d" result
     0

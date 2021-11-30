@@ -29,12 +29,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="Completed part2. Only required expanding the number of dimensions, simples.">
-      <change afterPath="$PROJECT_DIR$/AdventOfCode25/AdventOfCode25.fsproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdventOfCode25/Program.fs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.sln" afterDir="false" />
+    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="Day 25, test cases.">
+      <change beforePath="$PROJECT_DIR$/AdventOfCode25/Program.fs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode25/Program.fs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -534,7 +530,7 @@
       <workItem from="1608526502529" duration="23275000" />
       <workItem from="1622488333027" duration="12435000" />
       <workItem from="1638009142593" duration="13747000" />
-      <workItem from="1638286983523" duration="1970000" />
+      <workItem from="1638286983523" duration="2040000" />
     </task>
     <task id="LOCAL-00001" summary="Solution to problem 04 part 1">
       <created>1607626272919</created>
@@ -718,7 +714,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638262533918</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Day 25, test cases.">
+      <created>1638289275586</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1638289275586</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -740,7 +743,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Solution to problem 04 part 2" />
     <MESSAGE value="Solution to problem 06 part 1" />
     <MESSAGE value="Solution to problem 06 part2. Change of union to intersection." />
     <MESSAGE value="Solution to problem 10 part 1." />
@@ -765,7 +767,8 @@
     <MESSAGE value="Start of program 17. Reads input, has useful debugging print function. Does not yet generate next step." />
     <MESSAGE value="Part 1 complete. Fell back to HORIZON-based calculations." />
     <MESSAGE value="Completed part2. Only required expanding the number of dimensions, simples." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed part2. Only required expanding the number of dimensions, simples." />
+    <MESSAGE value="Day 25, test cases." />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 25, test cases." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
