@@ -17,6 +17,7 @@
     <projectFile>AdventOfCode14/AdventOfCode14.fsproj</projectFile>
     <projectFile>AdventOfCode13/AdventOfCode13.fsproj</projectFile>
     <projectFile>AdventOfCode17/AdventOfCode17.fsproj</projectFile>
+    <projectFile>AdventOfCode25/AdventOfCode25.fsproj</projectFile>
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -28,8 +29,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="Part 1 complete. Fell back to HORIZON-based calculations.">
-      <change beforePath="$PROJECT_DIR$/AdventOfCode17/Program.fs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode17/Program.fs" afterDir="false" />
+    <list default="true" id="a6ed80bb-a53b-4a86-8570-0353cf2b797a" name="Default Changelist" comment="Completed part2. Only required expanding the number of dimensions, simples.">
+      <change afterPath="$PROJECT_DIR$/AdventOfCode25/AdventOfCode25.fsproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdventOfCode25/Program.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,41 +45,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDCCF319-ADEC-8BDF-2295-52FABDB408CF/1/prim-types.fs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/05549A4D-0BD9-4208-86A3-46696D25F3B3/23/File.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDCCF319-ADEC-8BDF-2295-52FABDB408CF/3/seq.fs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/B7/Number.Parsing.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6AB201F8-C426-4EB8-B374-9FB7E3FFC0F4/21/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDCCF319-ADEC-8BDF-2295-52FABDB408CF/1/prim-types.fs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6AB201F8-C426-4EB8-B374-9FB7E3FFC0F4/6/CaptureCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/647FAEDF-A0C0-4C01-B79E-04471FFD80DF/CD/ReadOnlySpan.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDCCF319-ADEC-8BDF-2295-52FABDB408CF/4/map.fs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDCCF319-ADEC-8BDF-2295-52FABDB408CF/11/fslib-extra-pervasives.fs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/647FAEDF-A0C0-4C01-B79E-04471FFD80DF/B7/Number.Parsing.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/B7/Number.Parsing.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDCCF319-ADEC-8BDF-2295-52FABDB408CF/19/list.fs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDCCF319-ADEC-8BDF-2295-52FABDB408CF/4/map.fs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDCCF319-ADEC-8BDF-2295-52FABDB408CF/11/fslib-extra-pervasives.fs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/05549A4D-0BD9-4208-86A3-46696D25F3B3/23/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/647FAEDF-A0C0-4C01-B79E-04471FFD80DF/B7/Number.Parsing.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -106,6 +87,7 @@
       <option value="$PROJECT_DIR$/AdventOfCode17/input17_sample.txt" />
       <option value="$PROJECT_DIR$/AdventOfCode17/input17.txt" />
       <option value="$PROJECT_DIR$/AdventOfCode17/Program.fs" />
+      <option value="$PROJECT_DIR$/AdventOfCode25/Program.fs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lLHumhF2pjSKUIv5IR6yIrIeFR" />
@@ -132,7 +114,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.AdventOfCode17">
+  <component name="RunManager" selected=".NET Project.AdventOfCode25">
     <configuration name="AdventOfCode" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/AdventOfCode/bin/Debug/net5.0/AdventOfCode.dll" />
       <option name="PROGRAM_PARAMETERS" value="input01.txt" />
@@ -493,6 +475,24 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="AdventOfCode25" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/AdventOfCode25/AdventOfCode25.fsproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue=".NET Project.AdventOfCode" />
       <item itemvalue=".NET Project.AdventOfCode02" />
@@ -513,6 +513,7 @@
       <item itemvalue=".NET Project.AdventOfCode15" />
       <item itemvalue=".NET Project.AdventOfCode19_Run" />
       <item itemvalue=".NET Project.AdventOfCode17" />
+      <item itemvalue=".NET Project.AdventOfCode25" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -532,7 +533,8 @@
       <workItem from="1608229585480" duration="7571000" />
       <workItem from="1608526502529" duration="23275000" />
       <workItem from="1622488333027" duration="12435000" />
-      <workItem from="1638009142593" duration="12911000" />
+      <workItem from="1638009142593" duration="13747000" />
+      <workItem from="1638286983523" duration="1970000" />
     </task>
     <task id="LOCAL-00001" summary="Solution to problem 04 part 1">
       <created>1607626272919</created>
@@ -709,7 +711,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638262109957</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Completed part2. Only required expanding the number of dimensions, simples.">
+      <created>1638262533918</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1638262533918</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -731,7 +740,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Solution to problem 04 part 1" />
     <MESSAGE value="Solution to problem 04 part 2" />
     <MESSAGE value="Solution to problem 06 part 1" />
     <MESSAGE value="Solution to problem 06 part2. Change of union to intersection." />
@@ -756,7 +764,8 @@
     <MESSAGE value="AdventOfCode13: Completed part 1" />
     <MESSAGE value="Start of program 17. Reads input, has useful debugging print function. Does not yet generate next step." />
     <MESSAGE value="Part 1 complete. Fell back to HORIZON-based calculations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Part 1 complete. Fell back to HORIZON-based calculations." />
+    <MESSAGE value="Completed part2. Only required expanding the number of dimensions, simples." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed part2. Only required expanding the number of dimensions, simples." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -782,10 +791,10 @@
           <properties documentPath="C:\Users\James\RiderProjects\AdventOfCode\AdventOfCode17\Program.fs" initialLine="62" isMultiMethodBreakpoint="true">
             <option name="multiMethodBreakpoint" value="true" />
             <startOffsets>
-              <option value="2902" />
+              <option value="2903" />
             </startOffsets>
             <endOffsets>
-              <option value="2924" />
+              <option value="2925" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="10" />
